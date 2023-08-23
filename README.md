@@ -1,4 +1,4 @@
-# DualTemperaturePlotter
+# Temperature Plotter
 
 This project was designed as a cheap and simple means of logging accurate temperature measurements and graphical displays for school science or home learning. I provide two clients which read and record the data. One is written in Java and is intended to run on a Windows or Linux PC; the other is an Android phone app. Both clients connect to the same custom hardware via Bluetooth classic. 
 
