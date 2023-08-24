@@ -21,7 +21,7 @@ public class TemperaturePlotter  extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public static final String TOOLTITLE = "Dual Temperature Plotter V0.2";
+	public static final String TOOLTITLE = "Temperature Plotter V0.2";
 	private static JFreeChart chart;
 	private static XYItemRenderer theRenderer;
 	private static NumberAxis range;
