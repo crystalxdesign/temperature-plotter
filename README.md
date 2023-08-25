@@ -18,7 +18,7 @@ Captured traces can be saved by clicking the "Save Graph" button and giving it a
 >**Copy** the trace image to the PC clipboard by selecting "Copy"  
 >**Print** the trace image by selecting "Print"  
 
-Below is an example of a printed trace from one of thje examples:
+Below is an example of a printed trace from one of the examples:
 ![](https://github.com/crystalxdesign/temperature-plotter/blob/master/print.png)
 
 ## Android Client
