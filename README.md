@@ -21,6 +21,8 @@ Captured traces can be saved by clicking the "Save Graph" button and giving it a
 Below is an example of a printed trace from one of the examples:
 ![](https://github.com/crystalxdesign/temperature-plotter/blob/master/print.png)
 
+The trace was made by placing the temperature probe in a domestic freezer. The probe was powered via a 5V battery pack connected to its USB cable. The probe was connected via Bluetooth to an external PC running the java client. The Blue probe was placed on the top shelf and the Red Probe on the bottom. We can see that the top shelf remained warmer than the lower for 12 minutes until their temperatures converged at a uniform minus 22 centigrade.
+
 ## Android Client
 
 This provides most of the key functionality of the Java Client but only saves one trace at a time, to save another means to overwrite the first. The MIT App Inventor (https://ai2.appinventor.mit.edu/) is used to build the client and the code is all in the android_client_app directory.
