@@ -5,7 +5,7 @@ This project was designed as a cheap and simple means of logging accurate temper
 ## Temperature probe
 
 - 1 x [ESP32 module](https://www.amazon.co.uk/AZDelivery-NodeMcu-CP2102-Development-including/dp/B071P98VTG/ref=sr_1_1_sspa?keywords=esp32&qid=1692983560&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
-- 2 x [DS1820 temperature](https://thepihut.com/products/waterproof-ds18b20-digital-temperature-sensor-extras)
+- 2 x [DS1820 temperature probes](https://thepihut.com/products/waterproof-ds18b20-digital-temperature-sensor-extras)
 - 1 x 4.7k ohm resistor
 - 1 x USB lead (compatible with ESP32 module)
 
