@@ -9,9 +9,17 @@ This custom hardware is very simple, and is based around two DS1820 temperature 
 
 ## Java Client
 
-This provides the most complete set of functionalities of the two clients. It depends on jfreechart (from jfree) to display the temperature data, and jSerialComm (from fazecast) to provide the serial connection over the USB cable or via Bluetooth. The code is Java and is supplied as an Eclipse Maven project. The two DS1820 probes each provide a trace on the graph, distinguished by blue and red. Before starting, the appropriate com port needs to be selected from the "Module Serial Port" drop-down list. Both Bluetooth and USB Serial connections show in the same fashion. If the manual option is chosen then once the "Start" button is clicked the sampling will continue until the "Stop" button is clicked. With the automatic mode you can select up to 1000 samples which will continue at the rate selected (once per second maximum) until complete. Captured traces can be saved by clicking the "Save Graph" button and giving it a file name. Traces are saved in CSV format and can be viewed later by use of the "Load Graph" button. You can add a graph title to describe the trace which is also retained in the saved file. The example directory contains two traces I have made which can be loaded and viewed.
+This provides the most complete set of functionalities of the two clients. It depends on jfreechart (from jfree) to display the temperature data, and jSerialComm (from fazecast) to provide the serial connection over the USB cable or via Bluetooth. The code is Java and is supplied as an Eclipse Maven project. The two DS1820 probes each provide a trace on the graph, distinguished by blue and red. Before starting, the appropriate com port needs to be selected from the "Module Serial Port" drop-down list. Both Bluetooth and USB Serial connections show in the same fashion. If the manual option is chosen then once the "Start" button is clicked the sampling will continue until the "Stop" button is clicked. With the automatic mode you can select up to 1000 samples which will continue at the rate selected (once per second maximum) until complete.
 
 ![](https://github.com/crystalxdesign/temperature-plotter/blob/master/Animation.gif)
+
+Captured traces can be saved by clicking the "Save Graph" button and giving it a file name. Traces are saved in CSV format and can be viewed later by use of the "Load Graph" button. You can add a graph title to describe the trace which is also retained in the saved file. The example directory contains two traces I have made which can be loaded and viewed. Right-clicking on the graph area also allows you to
+>**Save** the trace as a PNG file by selecting "Save as>PNG"  
+>**Copy** the trace image to the PC clipboard by selecting "Copy"  
+>**Print** the trace image by selecting "Print"  
+
+Below is an example of a printed trace from one of thje examples:
+![](https://github.com/crystalxdesign/temperature-plotter/blob/master/print.png)
 
 ## Android Client
 
