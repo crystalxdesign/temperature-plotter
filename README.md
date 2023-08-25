@@ -1,8 +1,13 @@
 # Temperature Plotter
 
-This project was designed as a cheap and simple means of logging accurate temperature measurements and graphical displays for school science or home learning. I provide two clients which read and record the data. One is written in Java and is intended to run on a Windows or Linux PC; the other is an Android phone app. Both clients connect to the same custom hardware via Bluetooth classic. 
+This project was designed as a cheap and simple means of logging accurate temperature measurements with graphical display for use by school science classes or home learning. The project is free to use but please let me know how you use it. I provide two clients which read and record the data. One is written in Java and is intended to run on a Windows or Linux PC; the other is an Android phone app. Both clients connect to the same custom hardware via Bluetooth classic. 
 
 ## Temperature probe
+
+- 1 x [ESP32 module](https://www.amazon.co.uk/AZDelivery-NodeMcu-CP2102-Development-including/dp/B071P98VTG/ref=sr_1_1_sspa?keywords=esp32&qid=1692983560&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
+- 2 x [DS1820 temperature probes](https://www.amazon.co.uk/AZDelivery-Stainless-Temperature-Waterproof-Raspberry/dp/B07CZ1G29V/ref=sr_1_1_sspa?crid=H8ZPO96SN3G9&keywords=ds18b20&qid=1692983664&sprefix=Ds%2Caps%2C140&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
+- 1 x 4.7k ohm resistor
+- 1 x USB lead (compatible with ESP32 module)
 
 This custom hardware is very simple, and is based around two DS1820 temperature probes, an ESP32 with USB cable and a 4.7k resistor. The ESP32 provides all the control, connectivity and power regulation required. The USB cable is required for the 5V supply and also provides a direct serial data connection. If the probe is to be remote from the client (not powered from a USB port of a PC) then a 5V battery pack will need to be connected to the USB cable. The software for the ESP32 is to be found as [ESP32_DualThermoPlotterServer.ino](https://github.com/crystalxdesign/temperature-plotter/blob/master/ESP32_DualThermoPlotterServer/ESP32_DualThermoPlotterServer.ino) and requires the Arduino IDE to program it with the approriate libraries (BluetoothSerial, OneWire and DallasTemperature) installed. Before the Dual Temperature Plotter can be used for the first time the Temperature probe must be powered up and the PC or Android device paired to the Bluetooth server of the Temperature probe. You will see the Bluetooth server listed as "Temperature probe" when it boots.
   
