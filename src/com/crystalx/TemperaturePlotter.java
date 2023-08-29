@@ -1,10 +1,17 @@
 package com.crystalx;
 
 import java.awt.BorderLayout;
+import java.net.URL;
+import java.util.ArrayList;
 
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
+import java.awt.Image;
+import java.io.IOException;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
@@ -60,7 +67,16 @@ public class TemperaturePlotter  extends JFrame {
 
     public TemperaturePlotter() {
         super(TOOLTITLE);
- 
+        String[] iconnames = {"/icon16.png","/icon24.png","/icon32.png","/icon64.png"};
+        var icons = new ArrayList<Image>();
+        for(String i: iconnames) {
+        	try {
+				icons.add(ImageIO.read(getClass().getResource(i)));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+        }
+        this.setIconImages(icons);
         JPanel chartPanel = createChartPanel();
         add(chartPanel, BorderLayout.CENTER);
         JPanel controlPanel = ControlPanel.build();
