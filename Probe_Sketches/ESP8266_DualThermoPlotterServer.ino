@@ -52,21 +52,19 @@ void setup(){
   }
 }
 
-void onReceiveFunction(void){ 
-  while(Serial.available() > 0){
+void onReceiveFunction(void){
+  char output[22];
+  while(Serial.available()){
     Serial.read();
   }
   Serial.flush();
   sensors.requestTemperatures(); // Send the command to get temperatures
-  String output = "";
   float redTemp= 0.0;
   float blueTemp= 0.0;
   redTemp = sensors.getTempC(redDeviceAddress);
   blueTemp = sensors.getTempC(blueDeviceAddress);
-  Serial.print(redTemp);
-  Serial.print("@");
-  Serial.print(blueTemp);
-  Serial.println("@");
+  snprintf (output, sizeof(output), "%f@%f@", redTemp, blueTemp);
+  Serial.println(output);
 }
 
 // function to print a device address
